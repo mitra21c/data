@@ -1,0 +1,9 @@
+power shell을 관리자 권한으로 실행
+
+
+d:
+cd D:\GitHub\data
+git pull
+npm install
+npm run deploy
+
