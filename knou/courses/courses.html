@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>(농학과) 학사일정 / 수강과목</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "Noto Sans KR", "Malgun Gothic", "맑은 고딕", sans-serif;
+    background: #fff;
+    color: #111;
+    padding: 32px 40px 48px;
+  }
+  h1 {
+    font-size: 2.6rem;
+    font-weight: 900;
+    color: #1f2a6b;
+    text-shadow: 2px 2px 3px rgba(0,0,0,.25);
+    margin-bottom: 36px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  h1 .mark { font-size: 2rem; color: #1f2a6b; }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px 32px;
+    max-width: 1500px;
+  }
+  .card {
+    border-radius: 22px;
+    overflow: hidden;
+    border: 2px solid var(--border);
+    background: var(--body);
+    box-shadow: 4px 6px 10px rgba(0,0,0,.25);
+    min-height: 420px;
+  }
+  .card h2 {
+    background: var(--head);
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 900;
+    padding: 18px 0;
+    text-shadow: 1px 2px 3px rgba(0,0,0,.3);
+  }
+  .card ul {
+    list-style: none;
+    padding: 34px 0 34px 0;
+    width: fit-content;
+    margin: 0 auto 0 14%;
+  }
+  .card.center ul { margin: 0 auto; }
+  .card li {
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1.45;
+    position: relative;
+    padding-left: 1.1em;
+  }
+  .card li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+  }
+  .card li a.eval {
+    font-size: .6em;
+    font-weight: 700;
+    color: #1f4fa8;
+    text-decoration: none;
+    vertical-align: middle;
+  }
+  .card li a.eval:hover { text-decoration: underline; }
+  .y1 { --head: #3e78ac; --body: #d5e7f0; --border: #5a97c8; }
+  .y2 { --head: #d96c0a; --body: #fdcfae; --border: #ec8a3a; }
+  .y3 { --head: #b08700; --body: #f9f2a2; --border: #c8a42a; }
+  .y4 { --head: #7c6199; --body: #e0cfe3; --border: #9a7fb5; }
+  @media (max-width: 900px) {
+    body { padding: 20px; }
+    h1 { font-size: 1.7rem; }
+    .grid { grid-template-columns: 1fr; }
+    .card { min-height: 0; }
+    .card h2 { font-size: 1.8rem; }
+    .card li { font-size: 1.5rem; }
+    .card ul, .card.center ul { margin: 0 auto 0 10%; }
+  }
+</style>
+</head>
+<body>
+  <h1><span class="mark">❖</span>(농학과) 학사일정 / 수강과목</h1>
+
+  <div class="grid">
+    <section class="card y1">
+      <h2>1학년</h2>
+      <ul>
+        <li>생물과학</li>
+        <li>심리학에게 묻다</li>
+        <li>축산학</li>
+        <li>재배학원론 <a class="eval" href="https://mitra21c.github.io/data/knou/courses/%ED%98%95%EC%84%B1%ED%8F%89%EA%B0%80_%EC%9E%AC%EB%B0%B0%ED%95%99%EC%9B%90%EB%A1%A0_20261025103505_%EC%99%84%EB%A3%8C.pdf" target="_blank">(형성 평가 자료)</a></li>
+      </ul>
+    </section>
+
+    <section class="card y2">
+      <h2>2학년</h2>
+      <ul>
+        <li>재배식물생리학</li>
+        <li>가축사양학</li>
+        <li>반려동물학</li>
+      </ul>
+    </section>
+
+    <section class="card y3">
+      <h2>3학년</h2>
+      <ul>
+        <li>원예작물학 Ⅰ <a class="eval" href="https://mitra21c.github.io/data/knou/courses/%ED%98%95%EC%84%B1%ED%8F%89%EA%B0%80_%EC%9B%90%EC%98%88%EC%9E%91%EB%AC%BC%ED%95%991_20261025091009.pdf" target="_blank">(형성 평가 자료)</a></li>
+        <li>식용작물학 Ⅰ <a class="eval" href="https://mitra21c.github.io/data/knou/courses/%ED%98%95%EC%84%B1%ED%8F%89%EA%B0%80_%EC%8B%9D%EC%9A%A9%EC%9E%91%EB%AC%BC%ED%95%991_20261025095636.pdf" target="_blank">(형성 평가 자료)</a></li>
+        <li>환경친화형 농업 <a class="eval" href="https://mitra21c.github.io/data/knou/courses/%ED%98%95%EC%84%B1%ED%8F%89%EA%B0%80_%ED%99%98%EA%B2%BD%EC%B9%9C%ED%99%94%ED%98%95%EB%86%8D%EC%97%85_20261025094129_%EC%99%84%EB%A3%8C.pdf" target="_blank">(형성 평가 자료)</a></li>
+        <li>생활원예 <a class="eval" href="https://mitra21c.github.io/data/knou/courses/%ED%98%95%EC%84%B1%ED%8F%89%EA%B0%80_%EC%83%9D%ED%99%9C%EC%9B%90%EC%98%88_20261025102337_%EC%99%84%EB%A3%8C.pdf" target="_blank">(형성 평가 자료)</a></li>
+        <li>생물통계학 <a class="eval" href="https://mitra21c.github.io/data/knou/courses/%ED%98%95%EC%84%B1%ED%8F%89%EA%B0%80_%EC%83%9D%EB%AC%BC%ED%86%B5%EA%B3%84%ED%95%99_20261025101002_%EC%99%84%EB%A3%8C.pdf" target="_blank">(형성 평가 자료)</a></li>
+      </ul>
+    </section>
+
+    <section class="card y4">
+      <h2>4학년</h2>
+      <ul>
+        <li>잡초방제학</li>
+        <li>농축산식품이용학</li>
+        <li>식물분류학</li>
+        <li>농업경영학</li>
+        <li>농산업실무체험</li>
+      </ul>
+    </section>
+  </div>
+</body>
+</html>
