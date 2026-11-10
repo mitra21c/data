@@ -1,0 +1,7 @@
+
+PowerShell에서 아래 명령을 실행하세요.
+
+cd D:\GitHub\data_images
+git pull
+npm install
+npm run deploy
