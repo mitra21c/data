@@ -5,3 +5,11 @@ cd D:\GitHub\data_images
 git pull
 npm install
 npm run deploy
+
+
+d:
+cd D:\GitHub\data_images
+npm run deploy
+
+
+
